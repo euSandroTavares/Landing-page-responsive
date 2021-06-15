@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*code for the nav bar*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100px;
+}
+nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 12px;
+}
+
+.logo {
+  width: 200px;
+}
+
+/*code for the nav buttons*/
+ul {
+  min-width: 100px;
+  /*to make them horizontaly aling*/
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  /*just to make the cursor a pointer style*/
+  cursor: pointer;
+
+  /*font styling*/
+  font-size: 1.4em;
+  font-weight: 500;
+
+  /*to give a spacing on the fonts*/
+  padding: 10px;
+}
+/*make the nav buttons disapear*/
+@media screen and (max-width: 800px) {
+  ul {
+    display: none; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/*code for the social medias*/
+.social {
+  min-width: (100px);
+  display: flex;
+  align-items: center;
+}
+.insta {
+  margin: 12px;
+  width: 40px;
+}
+.twitt {
+  width: 50px;
+}
+.youtub {
+  width: 60px;
+}
+/*social media break point*/
+@media screen and (max-width: 800px) {
+  .social {
+    display: none; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/*nav buttons to phones and tablets*/
+.navigation {
+  width: 50px;
+}
+
+@media screen and (min-width: 801px) {
+  .navigation {
+    display: none;
+    /* only apear in 800px or less */
+  }
+}
+
+/*code to the main section*/
+
+body {
+  background-color: #214759;
+  color: white;
+  /*adding display flex to use the  aling-items atribute*/
+  display: flex;
+
+  /*to make the section part aling center on the screen*/
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  width: 70rem;
+  height: 500px;
+
+  /*using flex box to make the items to look right*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .logo{
+    margin-right: 12px;
+  }
+  .mainSection {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    width: 400px;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .bob {
+    padding: 20px;
+  }
+  .navigation{
+    width: 35px;
+    cursor: pointer;
+  }
+}
+
+/* chaging the size of the bob img*/
+.bob {
+  width: 350px;
+}
+
+/*make the section text to look good*/
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  font-weight: initial;
+  margin-right: 20px;
+  font-size: 1.3em;
+  padding-bottom: 15px;
+}
+/*media querie for the iphone*/
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+/*styling the button*/
+button {
+  /*size*/
+  width: 200px;
+  height: 35px;
+
+  font-weight: 500;
+  font-size: 17px;
+
+  /*doing the borders*/
+  border-radius: 5px;
+  border: none;
+
+  /*color background and color of the text*/
+  color: white;
+  background-color: #44819b;
+
+  /*make everything aling center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/*code fot the map tag*/
+.map {
+  width: 20px;
+}
