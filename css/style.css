@@ -43,6 +43,10 @@ li {
   /*to give a spacing on the fonts*/
   padding: 10px;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 /*make the nav buttons disapear*/
 @media screen and (max-width: 800px) {
   ul {
